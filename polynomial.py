@@ -7,7 +7,7 @@ def evaluate_polynomial(degree, x, constant_term, *coefficients):
 
     for k in range(1, degree + 1):
         term = coefficients[k - 1] * (x ** k)
-        print(f"S{k} (sum of the {k + 1} lowest terms) = {total} + {coefficients[k - 1]}({x}^{k}) = {total + term}")
+        print(f"S{k} (sum of the first {k + 1} terms) = {total} + {coefficients[k - 1]} * ({x}^{k}) = {total + term}")
         total += term
 
     print(f"P(x) = {total}")
@@ -15,7 +15,6 @@ def evaluate_polynomial(degree, x, constant_term, *coefficients):
 
 
 def main():
-
     while True:
         try:
             degree = int(input("Degree of the polynomial: "))
