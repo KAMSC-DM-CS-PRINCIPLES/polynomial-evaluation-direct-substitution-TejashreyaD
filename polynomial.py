@@ -1,6 +1,6 @@
 def evaluate_polynomial(degree, x, constant_term, *coefficients):
     if len(coefficients) != degree:
-        raise ValueError(f"Expected {degree} coefficients, but got {len(coefficients)}.")
+        raise ValueError(f"Need {degree} coefficient(s), but got {len(coefficients)}.")
 
     total = constant_term
     print(f"S0 (value of the constant term) = {total}")
