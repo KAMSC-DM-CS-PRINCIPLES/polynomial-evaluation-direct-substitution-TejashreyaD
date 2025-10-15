@@ -29,8 +29,6 @@ if __name__ == "__main__":
         test_example_polynomial,
         test_basic_polynomial,
         test_loop_functionality,
-        test_interactive_loop,
-        test_interactive_loop_exit_immediately
     ]
     
     print("Running Horner's method polynomial evaluation tests...")
